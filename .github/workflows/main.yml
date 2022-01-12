@@ -1,0 +1,20 @@
+on: push
+
+env:
+  clientId: 49e1068d-483b-4ab0-acc1-a282f141ec45
+  tenant: kubedave.onmicrosoft.com
+  
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: 'Upload TrustFrameworkBase Policy'
+      uses: azure-ad-b2c/deploy-trustframework-policy@v3
+      with:
+        folder: "."
+        files: "01-BuildingBlocks.xml,05-claimsProviders.xml,10-UserJourneys.xml,RP-SignUpSignIn.xml"
+        tenant: ${{ env.tenant }}
+        clientId: ${{ env.clientId }}
+        clientSecret: ${{ secrets.CLIENT_SECRET }}
