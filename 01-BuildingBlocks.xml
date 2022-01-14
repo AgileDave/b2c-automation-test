@@ -155,7 +155,7 @@
             <LocalizedResources Id="api.signuporsignin.en">
                 <LocalizedStrings>
                     <LocalizedString ElementType="UxElement" StringId="createaccount_intro">#Don't have an account?</LocalizedString>
-                    <LocalizedString ElementType="UxElement" StringId="forgotpassword_link">#Forgot your password?</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="forgotpassword_link">Did you forget your password?</LocalizedString>
                     <LocalizedString ElementType="UxElement" StringId="divider_title">#OR</LocalizedString>
                     <LocalizedString ElementType="UxElement" StringId="button_signin">#Sign in</LocalizedString>
                     <LocalizedString ElementType="UxElement" StringId="social_intro">#Sign in with your social account</LocalizedString>
